@@ -1,4 +1,8 @@
+require './employee'
+require './manager'
+require './marekteer'
 
+<<<<<<< HEAD
 #Sharing Behavior and Variables.
 
 # Create an employee class.
@@ -59,3 +63,20 @@ puts "Contact: ", marketer2.contact
 
 # BONUS: Demonstrate how to make this code less error-prone by using named arguments
 # 		 for the initializers
+=======
+manager = Manager.new("Bob", "Builder", "MBA", "bob@acme.org")
+
+marketer = Marketer.new("Seth", "Godin", "@seth")
+
+marketer2 = Marketer.new("Jo" , "Johannson")
+puts "Name: ", manager.full_name
+puts "Contact: ", manager.contact
+
+puts "Name: ", marketer.full_name
+puts "Contact:", marketer.contact
+
+
+puts "Name: ", marketer2.full_name
+puts "Contact:", marketer2.contact
+
+>>>>>>> 024eff48595cdf7df415125df5ce3e6848e82c27
