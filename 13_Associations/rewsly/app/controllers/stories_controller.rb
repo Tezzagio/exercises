@@ -10,7 +10,8 @@ class StoriesController < ApplicationController
   end
 
   def new
-    @story = Story.new
+    @story = Story.new user_id: current_user.id
+    @story = current_user.stories.new
   end
 
   def create
